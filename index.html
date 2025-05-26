@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daivakrupa Panditi | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <style>
+    :root {
+      --bg: #f4f4f9;
+      --text: #333;
+      --accent: #1f4037;
+      --highlight: #99f2c8;
+    }
+
+    body.dark {
+      --bg: #121212;
+      --text: #f1f1f1;
+      --accent: #99f2c8;
+      --highlight: #1f4037;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    html, body {
+      background: var(--bg);
+      color: var(--text);
+      scroll-behavior: smooth;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .toggle-theme {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 0.5rem 1rem;
+      background: var(--highlight);
+      color: var(--accent);
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      z-index: 999;
+    }
+
+    header {
+      text-align: center;
+      padding: 5rem 2rem 3rem;
+      background: linear-gradient(to right, var(--accent), var(--highlight));
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    .typing {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      height: 2rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: var(--bg);
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: var(--accent);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      background: white;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+
+    body.dark ul li {
+      background: #1e1e1e;
+    }
+
+    .btn {
+      background: var(--highlight);
+      color: var(--accent);
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+
+    .contact {
+      background: var(--accent);
+      color: white;
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+    }
+
+    #topBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--highlight);
+      color: var(--accent);
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 1rem;
+      cursor: pointer;
+      display: none;
+    }
+
+    @media(max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="toggle-theme" onclick="document.body.classList.toggle('dark')">Toggle Theme</div>
+
+  <header data-aos="fade-down">
+    <h1>Daivakrupa Panditi</h1>
+    <div class="typing" id="typed"></div>
+    <p>Web Development Student | HTML, CSS, JavaScript, React</p>
+  </header>
+
+  <nav>
+    <a href="#summary">About</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#awards">Achievements</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="summary" data-aos="fade-up">
+    <h2>Professional Summary</h2>
+    <p>Driven web development student with hands-on experience in HTML, CSS, JavaScript, and React. Eager to apply technical skills in a professional environment, contribute to impactful projects, and grow through real-world challenges. Strong focus on writing clean code, continuous learning, and becoming an asset to a forward-thinking development team.</p>
+  </section>
+
+  <section id="education" data-aos="fade-up">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Bachelor of Information Technology</strong> | QIS College Of Engineering, 2022–2026 | CGPA: 7.3</li>
+      <li><strong>HSC, MPC Stream</strong> | Sri Chaitanya Jr. College, 2020–2022 | CGPA: 6.42</li>
+      <li><strong>SSC</strong> | St. Xavier's High School, 2020 | CGPA: 9.87</li>
+    </ul>
+  </section>
+
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        Developed a machine learning model to predict customer churn using Gradient Boosting (XGBoost) and Survival Analysis.<br>
+        Analyzed customer behavior patterns to identify churn risk and retention strategies.<br>
+        Tools: Python, Scikit-learn, XGBoost, Lifelines, Pandas, Matplotlib
+      </li>
+    </ul>
+  </section>
+
+  <section id="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Technical:</strong> Python, JavaScript, Java (Basics), PHP, HTML, CSS, Responsive Design, Freelancing</li>
+      <li><strong>Soft:</strong> Communication, Teamwork, Problem-solving, Content Creation</li>
+    </ul>
+  </section>
+
+  <section id="awards" data-aos="fade-up">
+    <h2>Achievements & Awards</h2>
+    <ul>
+      <li>Developed interactive UIs and static web layouts for clients on Fiverr and Upwork</li>
+      <li>Authored creative scripts for offline projects with strong storytelling</li>
+      <li>Currently pursuing Full Stack Java Internship at Skilldzire</li>
+      <li>Participated in coding events and competitions with recognitions</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:daivakrupa515@gmail.com">daivakrupa515@gmail.com</a></p>
+    <p>Mobile: 7396948977</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/panditi-daivakrupa-b2567b26b" target="_blank">Profile</a></p>
+    <a class="btn" href="Daivakrupa_Resume.pdf" download>Download Resume</a>
+
+    <form action="https://formspree.io/f/mzbqavjl" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <button id="topBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Top</button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    AOS.init({ duration: 1200 });
+
+    new Typed("#typed", {
+      strings: ["Hi, I'm Daivakrupa!", "How are you?", "Welcome to my portfolio!"],
+      typeSpeed: 50,
+      backSpeed: 25,
+      loop: true
+    });
+
+    window.onscroll = function () {
+      const btn = document.getElementById("topBtn");
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+  </script>
+</body>
+</html>
